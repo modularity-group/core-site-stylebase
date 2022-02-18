@@ -1,0 +1,16 @@
+// generate_editor_styles=true
+
+.wp-block-group,
+.wp-block-cover,
+.wp-block-columns {
+  &.is-style-space-before {
+    margin-top: var(--base-offset-vertical);
+  }
+  &.is-style-space-after {
+    margin-bottom: var(--base-offset-vertical);
+  }
+  &.is-style-space-around {
+    margin-top: var(--base-offset-vertical);
+    margin-bottom: var(--base-offset-vertical);
+  }
+}

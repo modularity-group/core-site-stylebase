@@ -1,0 +1,122 @@
+.site-layout-container {
+  width: 100%;
+
+  > * {
+    width: var(--base-content-width);
+    max-width: calc(100% - calc(2 * var(--base-offset)));
+    margin-left: auto;
+    margin-right: auto;
+
+    &.alignfull {
+      width: 100%;
+      max-width: 100%;
+
+      > p,
+      > h1,
+      > h2,
+      > h3,
+      > h4,
+      > ol,
+      > ul,
+      > article {
+        width: var(--base-content-width);
+        max-width: calc(100% - calc(2 * var(--base-offset)));
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    &.alignwide {
+      width: calc(100% - 2 * var(--base-offset)) !important;
+      max-width: var(--base-layout-width);
+
+      &.wp-block-group > * {
+        padding-left: var(--base-offset);
+        padding-right: var(--base-offset);
+      }
+    }
+  }
+
+  > :first-child:not(div) {
+    margin-top: var(--base-offset-vertical);
+  }
+
+  .wp-block-columns {
+    gap: var(--base-gap);
+    margin-left: auto;
+    margin-right: auto;
+
+    .wp-block-column {
+      margin-left: unset !important;
+
+      :last-child {
+        margin-bottom: 0;
+      }
+
+      /*@media (min-width: 782px) {
+        &:not(:first-child) {
+          margin-left: var(--base-gap);
+        }
+      }*/
+
+      @media (min-width: 600px) and (max-width: 781px) {
+
+        &:not(:only-child) {
+          flex-basis: calc(50% - var(--base-gap)) !important;
+        }
+
+        /*&:nth-child(2n) {
+          margin-left: var(--base-gap);
+        }*/
+      }
+
+      @media (max-width: 599px) {
+        margin-bottom: var(--base-space);
+      }
+    }
+  }
+
+  .wp-block-cover,
+  .wp-block-cover-image {
+    padding: var(--base-offset);
+
+    &__inner-container :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .wp-block-columns {
+    margin-bottom: var(--base-space);
+
+    &.has-background {
+      padding: var(--base-offset-vertical) var(--base-offset);
+    }
+  }
+
+  .wp-block-group.has-background {
+    padding-top: var(--base-offset-vertical);
+    padding-bottom: var(--base-offset-vertical);
+
+    &:not(.alignwide):not(.alignfull) {
+      padding-left: var(--base-offset);
+      padding-right: var(--base-offset);
+    }
+
+    > :last-child {
+      margin-bottom: 0;
+    }
+
+    > * > :first-child {
+      margin-top: 0;
+    }
+  }
+
+  iframe {
+    width: 100%;
+    max-width: 100%;
+
+    @media (max-width: 599px) {
+      max-height: 60vw;
+    }
+  }
+}
