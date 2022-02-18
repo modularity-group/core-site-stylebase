@@ -1,4 +1,4 @@
-# core-theme-space
+# core-theme-base
 
 A reset point for all frontend styling related components.
 
