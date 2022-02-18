@@ -21,6 +21,8 @@ submodules
 - `config-spacing` > block-styles space-before, space-after and space-around for layout-blocks wp-block-cover, wp-block-columns and wp-block-group
 - `config-wp-blocks` > reset core wp-blocks
 
+(currently an alternative for `core-module-variables`, `config-css-reset`, `config-site-layout`, `config-theme-spacing` and `config-reset-wp-blocks`)
+
 ---
 
 1.0.1 | FIX old var names and editor title height
