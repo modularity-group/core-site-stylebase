@@ -1,0 +1,21 @@
+name: Pro Module Deployment
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: rsync deployments
+      uses: burnett01/rsync-deployments@5.1
+      with:
+        switches: -avzr --delete
+        path: /
+        remote_path: /var/www/virtual/modgroup/pro.modularity.group/core-site-stylebase/
+        remote_host: sirius.uberspace.de
+        remote_user: modgroup
+        remote_key: ${{ secrets.SSH_PRIVATE_KEY }}

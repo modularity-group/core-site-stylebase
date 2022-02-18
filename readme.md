@@ -1,4 +1,4 @@
-# core-theme-base
+# core-site-stylebase
 
 A reset point for all frontend styling related components.
 
