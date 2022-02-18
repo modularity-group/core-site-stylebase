@@ -7,7 +7,7 @@
     background: #f2f4f5;
     color: black;
     margin-top: unset;
-    margin-bottom: var(--theme-element-spacer);
+    margin-bottom: var(--base-space);
     border-bottom: 1px solid #e0e0e0;
 
     .editor-post-title {
@@ -25,6 +25,7 @@
       .editor-post-title__input {
         font-size: 16px;
         min-height: unset;
+        height: unset;
         padding: 0;
         color: rgb(68,68,68);
         font-family: inherit;
