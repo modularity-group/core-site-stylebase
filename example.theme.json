@@ -73,11 +73,6 @@
           "name": "Background",
           "slug": "background",
           "color": "var(--base-color-background)"
-        },
-        {
-          "name": "Lines",
-          "slug": "lines",
-          "color": "var(--base-color-lines)"
         }
       ]
     },

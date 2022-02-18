@@ -4,7 +4,7 @@ A reset point for all frontend styling related components.
 
 ---
 
-Version: 1.0.0
+Version: 1.0.1
 
 Author: Matze @ https://modularity.group
 
@@ -22,5 +22,7 @@ submodules
 - `config-wp-blocks` > reset core wp-blocks
 
 ---
+
+1.0.1 | little tweaks
 
 1.0.0 | init and merge several existing modules

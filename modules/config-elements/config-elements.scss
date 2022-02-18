@@ -13,8 +13,6 @@
 10-forms
 11-pseudo
 12-utilities
-13-layout
-14-spacing
 */
 
 /* 01-normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -133,7 +131,7 @@ code { font-family: monaco, monospace, courier; }
 
 code {
   background: var(--base-color-light);
-  border: 1px solid var(--base-color-lines);
+  border: 1px solid var(--base-color-light);
   font-size: .8rem;
   padding: .1em .2em;
 }
@@ -165,7 +163,7 @@ iframe {
 hr,
 hr.wp-block-separator {
   border: 0;
-  border-top: 1px solid var(--base-color-lines);
+  border-top: 1px solid var(--base-color-light);
   margin: 2em 0;
 }
 
@@ -179,7 +177,7 @@ table {
 }
 
 table td, table th {
-  border-bottom: 1px solid var(--base-color-lines);
+  border-bottom: 1px solid var(--base-color-light);
   padding: 7px 13px;
   text-align: left;
 }
@@ -205,7 +203,7 @@ input[type="number"],
 input[type="search"],
 input[type="url"],
 input[type="tel"] {
-  border: 1px solid var(--base-color-lines);
+  border: 1px solid var(--base-color-light);
   color: inherit;
   line-height: inherit;
   padding: .3rem var(--base-space);
@@ -215,7 +213,7 @@ input[type="tel"] {
 }
 
 textarea:focus,
-input:focus { border-color: var(--base-color-lines); }
+input:focus { border-color: var(--base-color-light); }
 
 textarea {
   height: 90px;
